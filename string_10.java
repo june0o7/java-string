@@ -14,16 +14,16 @@ public class string_10 {
 
     public static void piglatin(String s){
         boolean a = false;
-        // int k = s.indexOf(s)
+       
         String s2 = "";
         String S3 = "ay";
-        // int first_occur;
+        
         for (int i = 0 ; i<s.length();i++){
             char ch = s.charAt(i);
             if("AEIOUaeiou".indexOf(ch)!=-1 && a==false) {
                 s2+=ch;
                 a=true;
-                // first_occur=i;
+               
                 s2 += s.substring(i+1);
                 String sa = s.substring(0,i);
                 s2+=sa;
